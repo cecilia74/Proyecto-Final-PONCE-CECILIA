@@ -71,7 +71,6 @@ header {
 
 .items {
     margin-top: 15px;
-    border: solid orange 2px;
     display: flex;
     flex-wrap: wrap;
 
@@ -232,9 +231,6 @@ footer {
 }
 
 
-
-
-
 .modal {
     background-color: aquamarine;
 }
@@ -304,4 +300,7 @@ footer {
     border: #df661b;
 }
 
+#vaciar_carrito {
 
+    margin-left: 580px;
+}

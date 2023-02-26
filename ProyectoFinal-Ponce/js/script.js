@@ -228,9 +228,6 @@ const cantProductos = document.querySelector('#contadorCarro')
 
 
 
-
-
-
 //alerta 
 const alerta2=document.querySelector(".btn-comprar")
 alerta2.addEventListener('click',()=>{
