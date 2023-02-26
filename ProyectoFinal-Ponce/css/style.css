@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(../IMG/5559852.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(4, 158, 224);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 95px;
+    border-radius: 50px;
+    margin-left: 18px;
+
+
+}
+
+
+.btn-carro {
+    color: rgb(68, 62, 62);
+    text-align: center;
+    font-size: 40px;
+    margin-right: 20px;
+    background-color: #1b9edf;
+    border: none;
+}
+
+.btn-carro:hover {
+    background-color: #09ddf9aa;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.bloque {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+
+.card-img {
+    width: 40vh;
+}
+
+.items {
+    margin-top: 15px;
+    border: solid orange 2px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-body {
+    background-color: rgb(246, 239, 251);
+    border: solid rgb(88, 36, 141);
+    border-radius: 10px;
+    width: 120px;
+    height: 150px;
+    padding-top: 15px;
+    display: grid;
+    justify-items: center;
+
+}
+
+.card-title {
+
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.precio {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+.card-body button {
+    text-decoration: none;
+    color: black;
+    border: solid 1px rgb(239, 45, 45);
+    border-radius: 6px;
+    background-color: rgb(212, 49, 98);
+}
+
+footer {
+    height: 60px;
+}
+
+.carrusel {
+    display: grid;
+    justify-content: center;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+    border-radius: 2px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background: #23E3C9;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40D3DC;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40D3DC;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40D3DC;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40D3DC;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #40D3DC;
+}
+
+
+.btn {
+    margin: 0px 0px 8px 0px;
+    width: 90px;
+}
+
+
+
+
+
+.modal {
+    background-color: aquamarine;
+}
+
+
+.carrito_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.boton_eliminar_producto {
+    width: 30px;
+    height: 35px;
+    border: solid grey 1px;
+    color: #dc0331;
+}
+
+.titulos_modal {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.modal-contenedor {
+text-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 120px 1fr 1fr 1fr 60px;
+grid-template-areas:
+"img-fluid nombre_modal precio_modal stock_modal btn-elim"
+;
+}
+
+.img-fluid {
+background-color: #dc0331;
+    grid-area: img-fluid;
+}
+.nombre_modal{
+    grid-area: nombre_modal;
+background-color: #df661b;
+
+}
+.precio_modal{
+    grid-area: precio_modal;
+    background-color: blueviolet;
+}
+.stock_modal{
+    grid-area: stock_modal;
+    background-color: cadetblue;
+}
+.btn-elim {
+    grid-area: btn-elim;
+}
+footer {
+    text-align: center;
+    color: white;
+    background-color: #360548c6;
+    bottom: 0px;
+}
+
+.precio_total {
+    display: flex;
+    justify-content: right;
+    margin-right: 35px;
+    border: #df661b;
+}
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/933e3a068c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./IMG/logo-carrito-compras crop.png">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tienda CELULARES</title>
+</head>
+
+<body class="caja">
+    <header>
+
+        <div class="logo"><img src="./img/logo-carrito-compras.png" alt=""></div>
+
+        <button class="btn-carro" id="boton-carro"><i class="fas fa-shopping-cart" alt=""></i>
+            <span id="contador-carro">0</span>
+        </button>
+
+    </header>
+
+    <main id="cont">
+
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="https://mostrar.com.ar/media/2020/08/7759-los-mejores-celulares-baratos-y-buenos-calidad-precio-2020-gama-media-y-gama-alta.jpg"
+                            alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://th.bing.com/th/id/R.9006461f4e6b0a2c1c4fcff09102d129?rik=BM7PUbmhK1ijlw&pid=ImgRaw&r=0"
+                            alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://androidvk.com/wp-content/uploads/2020/05/Filtraci%C3%B3n-Este-ser%C3%ADa-el-nuevo-celular-Motorola-One-Fusion.jpg"
+                            alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i1.wp.com/effemeride.it/wp-content/uploads/2020/07/TCL-10L-valida-alternativa.jpg?resize=1280%2C720&ssl=1"
+                            alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="items" id="cajita"></div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="titulos_modal">
+                            <p>Producto</p>
+                            <p>Precio</p>
+                            <p>Cantidad</p>
+                        </div>
+                    </div>
+                    <div id="modalContainer" class="modal-body">
+                    </div>
+                    <div class="precio_total"><p class="total"> Total: </p>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button   id="vaciar_carrito" type="button"
+                            class="btn btn-secondary">Vaciar Carrito</button>
+                        <button  data-bs-dismiss="modal" id="comprar_alert"
+                            type="button" class="btn-comprar btn-primary">Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+
+
+
+        <div>
+            <p>Proyecto E-commer by Cecilia Ponce</p>
+            <div>
+                <img src="" alt="">
+
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+</body>
+
+</html>
