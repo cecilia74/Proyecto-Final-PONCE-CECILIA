@@ -107,27 +107,12 @@ celulares.forEach((producto) => {
 })
 
 
+let totalProd = 0;
+let total =0;
 let envio = 1000;
 let precioApagar ;
-let precioConEnvio=0;
 const carrito = [];
 const cantidad = 0;
-
-
-// const btns = document.querySelectorAll(".botoncito"); 
-
-
-// for (const btn of btns) { 
-
-//     btn.addEventListener('click',()=>{
-
-//         agregarAlCarrito(btns.id) 
-
-//         alert("Gracias por su compra")
-
-//     })
-
-// }
 
 
 // JSON
@@ -192,11 +177,10 @@ const {id, nombre, stock, precio, img, aVender} = producto
         </div>
         
         `
+       
     })
 
-
     guardarStorage()
-
 
 
 
@@ -235,42 +219,15 @@ vaciarCarrito.addEventListener ('click', () => {
 })
 
 
+// Total 
+//Problemas con unir la funcion con la cantidad
 
 
-// function agregarAlCarrito(id) {
+const valorTotal = document.querySelector('.total')
+const cantProductos = document.querySelector('#contadorCarro')
 
-//     const item = celulares.find((producto) => producto.id === id)
-// const agregarId = id
-// var yaExiste="false";
-// carrito.forEach(myFunction)
-// function myFunction(item, index, arr) {
-// if(arr[index].id===agregarId){
 
-// arr[index].aVender+=1;
-// yaExiste="true";
 
-// }
-// }
-// if(yaExiste=="false"){
-//     carrito.push(item)
-
-// }else{
-// yaExiste="false"
-// }
-// mostrarCarrito()
-
-//     localStorage.setItem("carrito", JSON.stringify(carrito))
-// }
-
-// Total
-
-//const precioTotal = document.getElementsByClassName("total")
-function ActualizarCantidad(precio){
-    const x = celulares.find((producto) => producto.precio === producto.precio)
-carrito.push(x)
-console.log (x)
-
-}
 
 
 
@@ -282,6 +239,8 @@ alerta2.addEventListener('click',()=>{
         '',
         'success'
     )
+    carrito.length = [];
+    mostrarCarrito()
 })
 
 
